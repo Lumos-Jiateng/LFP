@@ -12,4 +12,12 @@ Our Modularized Framework: The Right part is a Double retrieval model which obta
 
 Our code is buit on torch 1.12 and CUDA 11.3, to install the dependencies, run:
     
-    ```pip install requirements.txt```
+    pip install requirements.txt
+    
+### Data preprocessing
+The COIN dataset is originally instructional videos, with each piece of annotation provides the start time and the end time of an action (step). In our preprocessing code, we do the following things:
+  1. Reorganize the dataset and split the whole dataset into train / val / test.
+  2. Generate images from the original COIN videos. (Including multi-frame and single-frame)
+  3. Generate json file for training the language model and the double retrieval model independently.
+
+To obtain the whole COIN dataset, visit [Official Web Page of COIN](https://coin-dataset.github.io/)
