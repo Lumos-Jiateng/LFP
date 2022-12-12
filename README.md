@@ -12,5 +12,5 @@ Our Modularized Framework: The Right part is a Double retrieval model which obta
 
 Our code is buit on torch 1.12 and CUDA 11.3, to install the dependencies, run:
     ```
-    pip install requirements.txt
+    1. pip install requirements.txt
     ```
