@@ -56,4 +56,9 @@ The overall file structure should be as below after the preprocessing:
           ...
        ---Single-Image
           ...
-       
+
+### Train / Evaluate the Language Model Module
+
+We used the Hugging Face transformers library for our language model implementation, check the documents on [BART - documentation](https://huggingface.co/transformers/v4.9.0/model_doc/bart.html)
+
+
