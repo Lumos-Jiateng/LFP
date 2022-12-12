@@ -10,4 +10,6 @@ Our Modularized Framework: The Right part is a Double retrieval model which obta
   1. Data Preprocessing code on COIN dataset.
   2. Training and Testing code for our Modularized Framework on COIN.
 
-   
+Our code is buit on torch 1.12 and CUDA 11.3, to install the dependencies, run:
+    pip install requirements.txt
+    
