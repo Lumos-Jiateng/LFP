@@ -11,6 +11,4 @@ Our Modularized Framework: The Right part is a Double retrieval model which obta
   2. Training and Testing code for our Modularized Framework on COIN.
 
 Our code is buit on torch 1.12 and CUDA 11.3, to install the dependencies, run:
-    ```
-    1. pip install requirements.txt
-    ```
+    ```pip install requirements.txt```
