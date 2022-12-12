@@ -1,0 +1,29 @@
+dataset: 'coin'
+training_type: 'Multi_Image'
+testing_type: 'Multi_Image'
+step_number: 'two'
+head_number: 2
+strategy: 'alone'
+
+image_size: 384
+
+#Files defined in dataset.
+#re_train_file: '/nfs4-p1/ljt/Code/BRE/coin_preprocessing/Json_for_dataset_full/train.json'
+#re_val_file: '/nfs4-p1/ljt/Code/BRE/coin_preprocessing/Json_for_dataset_full/test.json'
+#re_test_file: '/nfs4-p1/ljt/Code/BRE/coin_preprocessing/Json_for_dataset_full/test.json'
+
+batch_size_train: 1
+batch_size_test: 1
+batch_size_val: 1
+
+med_config: 'configs/med_config.json'
+double_predict_path: '/nfs4-p1/ljt/github/LFP/Double_retrieval/output/coin_double_2/text_retrieval_coin/checkpoint_coin_epoch_12_T_2_retrieval.pth' 
+lm_checkpoint_path_step_1: '/nfs4-p1/ljt/github/LFP/Language_pred/output/coin_step_3_p2/text_baseline/checkpoint_coin_epoch_14_mode_2_T_1.pth'
+lm_checkpoint_path_step_2: '/nfs4-p1/ljt/github/LFP/Language_pred/output/coin_text_step_4_p0/text_baseline/checkpoint_coin_epoch_19_mode_0_T_2.pth'
+pretrained: 'https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base.pth'
+
+# optimizer
+weight_decay: 0.05
+init_lr: 1e-5
+min_lr: 0
+max_epoch: 15
