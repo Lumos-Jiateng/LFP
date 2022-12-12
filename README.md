@@ -65,10 +65,34 @@ To train / evaluate the language Model, run:
     
     cd LFP
     cd Language_pred
-    python --config YOUR_CONFIG --output_dir YOUR_OUTPUT_DIR --result_path YOUR_RESULT_PATH --pred_path' YOUR_PRED_PATH --prompt_mode PROMPT
+    python lm_predict.py --config YOUR_CONFIG --output_dir YOUR_OUTPUT_DIR --result_path YOUR_RESULT_PATH --pred_path YOUR_PRED_PATH --prompt_mode PROMPT
     
- ```YOUR_RESULT_PATH`` and ```YOUR_PRED_PATH``` will record the accuracy number of the language prediction and the language predict result of all test samples.
+ ```YOUR_RESULT_PATH``` and ```YOUR_PRED_PATH``` will record the accuracy number of the language prediction and the language predict result of all test samples.
  
- PROPMT mode allows you to change the language model prompt style according to our paper.
+ ```PROPMT``` mode allows you to change the language model prompt style according to our paper.
     
+### Train / Evaluate the Double Retrieval Module
 
+We use the [Pretrained BLIP Model checkpoint](https://github.com/salesforce/BLIP) to initialize our model. Download the checkpoint [here](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_nlvr.pth)
+
+To train / evaluate the Double Retrieval Model, run:
+    
+    cd LFP
+    cd Double_retrieval
+    python coin_retrieve.py --config YOUR_CONFIG --output_dir YOUR_OUTPUT_DIR --result_path YOUR_RESULT_PATH --write_path YOUR_WRITE_PATH 
+    
+### Train / Evaluate the Modularized FrameWork
+
+After Obtaining the checkpoints on our LM module and DR module independently, we can evaluate the performance of our Modularized FrameWork.
+
+To evaluate our Modularized FrameWork, simply run:
+    
+    cd LFP
+    cd Modularized_Framework
+    python coin_eval.py --config YOUR_CONFIG --output_dir YOUR_OUTPUT_DIR --result_path YOUR_RESULT_PATH --write_path YOUR_WRITE_PATH 
+
+### Citation
+
+### Acknowledgement 
+
+The implementation our code repository relies on resources from BLIP, Huggingface Transformers, and timm. We thank the original authors for their open-sourcing.
