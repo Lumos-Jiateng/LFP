@@ -20,7 +20,7 @@ The COIN dataset is originally instructional videos, with each piece of annotati
   2. Generate images from the original COIN videos. (Including multi-frame and single-frame).   ---run generate_images.py 
   3. Generate json file for training the language model and the double retrieval model independently.   ---run generate_json_final.py 
 
-Remember to change YOUR_JSON_FILE YOUR_TARGET_IMAGE_DIRECTORY YOUR_IMAGE_ROOT_PATH into your ideal file path when running the preprocessing code.
+Remember to change ```YOUR_JSON_FILE YOUR_TARGET_IMAGE_DIRECTORY YOUR_IMAGE_ROOT_PATH ``` into your ideal file path when running the preprocessing code.
 
 To obtain the whole COIN dataset, visit [Official Web Page of COIN](https://coin-dataset.github.io/) to download the videos / annotation file.
 
