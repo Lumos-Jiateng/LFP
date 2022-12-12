@@ -1,0 +1,25 @@
+dataset: 'coin'
+step_number: 2
+
+image_size: 384
+
+#re_train_file: '/nfs4-p1/ljt/Code/BRE/coin_preprocessing/Json_for_dataset/train.json'
+#re_val_file: '/nfs4-p1/ljt/Code/BRE/coin_preprocessing/Json_for_dataset/test.json'
+#re_test_file: '/nfs4-p1/ljt/Code/BRE/coin_preprocessing/Json_for_dataset/test.json'
+
+re_train_file: '/nfs4-p1/ljt/github/coin_preprocessing_new/Json_for_dataset_final/Single_Image/two_train.json'
+re_val_file: '/nfs4-p1/ljt/github/coin_preprocessing_new/Json_for_dataset_final/Single_Image/two_val.json'
+re_test_file: '/nfs4-p1/ljt/github/coin_preprocessing_new/Json_for_dataset_final/Single_Image/two_test.json'
+
+batch_size_train: 2
+batch_size_test: 2
+batch_size_val: 2
+
+med_config: 'configs/med_config.json'
+pretrained: 'https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base.pth'
+
+# optimizer
+weight_decay: 0.05
+init_lr: 1e-5
+min_lr: 0
+max_epoch: 20
