@@ -7,7 +7,7 @@ Our Modularized Framework: The Right part is a Double retrieval model which obta
 
 ### Catalog 
 #### Version-1.0 Update:
-    1. Data Preprocessing code on COIN dataset.
-    2. Training and Testing code for our Modularized Framework on COIN.
+  1. Data Preprocessing code on COIN dataset.
+  2. Training and Testing code for our Modularized Framework on COIN.
 
    
