@@ -61,4 +61,14 @@ The overall file structure should be as below after the preprocessing:
 
 We used the Hugging Face transformers library for our language model implementation, check the documents on [BART - documentation](https://huggingface.co/transformers/v4.9.0/model_doc/bart.html)
 
+To train / evaluate the language Model, run:
+    
+    cd LFP
+    cd Language_pred
+    python --config YOUR_CONFIG --output_dir YOUR_OUTPUT_DIR --result_path YOUR_RESULT_PATH --pred_path' YOUR_PRED_PATH --prompt_mode PROMPT
+    
+ ```YOUR_RESULT_PATH`` and ```YOUR_PRED_PATH``` will record the accuracy number of the language prediction and the language predict result of all test samples.
+ 
+ PROPMT mode allows you to change the language model prompt style according to our paper.
+    
 
