@@ -91,6 +91,8 @@ To evaluate our Modularized FrameWork, simply run:
     cd Modularized_Framework
     python coin_eval.py --config YOUR_CONFIG --output_dir YOUR_OUTPUT_DIR --result_path YOUR_RESULT_PATH --write_path YOUR_WRITE_PATH 
 
+### Warning
+There is a bug recently detected. In ./LFP/Modularized_Framework/coin_eval.py, in Function ```Eval_pipeline_model```, the computation for MIoU has got a problem. Remember to re-evaluate the model result with the output .json file.
 ### Citation
 
 ### Acknowledgement 
